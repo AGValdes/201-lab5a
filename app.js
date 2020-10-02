@@ -58,18 +58,6 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-<<<<<<< HEAD
-function sumAndMultiply(a, b, c) { //eslint-disable-line
-  var sumNum = sum(a,b,c)[0];
-  console.log(sumNum);
-  var prodNum = multiply(a,b,c)[0];
-  console.log(prodNum);
-  var stringOne = a + ' and ' + b + ' and ' + c + ' sum to ' + sumNum + '.';
-  console.log(stringOne);
-  var stringTwo = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + prodNum + '.';
-  console.log(stringTwo);
-  return [sumNum, prodNum, stringOne, stringTwo];
-=======
 
 
 function sumAndMultiply(a, b, c) {
@@ -82,11 +70,10 @@ function sumAndMultiply(a, b, c) {
     var stringTwo = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + prodNum + '.';
     console.log(stringTwo);
     return [sumNum, prodNum, stringOne, stringTwo];
->>>>>>> d8d070df1259605069158a89f259b6615ad53e39
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-testSumAndMultiply(4,7,5);
+// testSumAndMultiply(4,7,5);
 
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
@@ -114,7 +101,7 @@ function sumArray(sumArr) {
 
 // Here is the test for sumArray(); uncomment it to run it
 
-testSumArray(testArray);
+// testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -130,11 +117,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+  var numProd = multiply (testArray[0], testArray[1], testArray[2])[0];
+  console.log(numProd);
+  var string = 'The numbers ' + testArray + ' have a product of ' + numProd + '.';
+  console.log(string);
+  return [numProd, string];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
